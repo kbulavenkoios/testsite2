@@ -71,6 +71,8 @@ section {
     padding-top: 10%;   /*  додає 10% від висоти екрану зверху.   */
     padding-bottom: 5%;    /*  додає 5% від висоти екрану знизу.   */
     overflow-y: auto; /* Якщо вміст великий, додається скрол */
+    min-height: calc(100vh - clamp(60px, 10vh, 120px) - 5%);
+    margin-bottom: 5%;
 }
 
 /* Футер */
