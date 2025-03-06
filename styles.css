@@ -1,0 +1,85 @@
+/* Загальні стилі */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Хедер */
+/* Хедер */
+header {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: clamp(60px, 10vh, 120px); /* Адаптивна висота */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Меню */
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Щоб пункти меню переносилися на новий рядок на маленьких екранах */
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(14px, 2vw, 20px); /* Адаптивний розмір шрифту */
+}
+
+/* Заголовок у хедері */
+header h1 {
+    font-size: clamp(18px, 3vw, 36px); /* Адаптивний розмір шрифту */
+    margin: 5px 0;
+}
+
+
+/* Основна секція */
+section {
+    padding: 20px;
+    text-align: center;
+    height: calc(85% - 40px); /* Враховує padding */
+    padding-top: 10%;
+    padding-bottom: 5%;
+    overflow-y: auto; /* Якщо вміст великий, додається скрол */
+}
+
+/* Футер */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+}
