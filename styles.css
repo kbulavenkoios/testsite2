@@ -84,3 +84,10 @@ footer {
     height: 5%;            /*  встановлює висоту у 5% від екрану. */
     bottom: 0;  left: 0;   /*  закріплює футер у нижньому лівому куті.  */
 }
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
